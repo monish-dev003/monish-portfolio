@@ -89,29 +89,31 @@ const GALLERY_DATA = {
       desc: 'Participated as the "Minister of Law & Justice" in a national Youth Parliament simulation — a programme fostering civic awareness, public speaking, and democratic values among students.',
       photos: ['/gallery/youthparl-1.jpg', '/gallery/youthparl-2.jpg', '/gallery/youthparl-3.jpg'],
     },
-    {
-      id: 'e3',
-      title: 'Vidyanagar Campus Events',
-      caption: '🏫 Vidyanagar · Academic Events',
-      desc: 'Moments from academic and cultural events held at Vidyanagar — representing the college in inter-collegiate programmes.',
-      photos: ['/gallery/vidyanagar-1.jpg', '/gallery/vidyanagar-2.jpg'],
-    },
+    
   ],
   travel: [
     {
       id: 't1',
       title: 'Anasagar Lake, Ajmer',
       caption: '🌊 Anasagar Lake · Ajmer, Rajasthan',
-      desc: "A serene visit to Anasagar Lake — one of India's historic man-made lakes built in the 12th century, offering stunning reflections at sunset and a peaceful retreat from the digital world.",
+      desc: "A serene visit to Anasagar Lake one of India's historic man-made lakes built in the 12th century, offering stunning reflections at sunset and a peaceful retreat from the digital world.",
       photos: ['/gallery/anasagar-1.jpg', '/gallery/anasagar-2.jpg', '/gallery/anasagar-3.jpg'],
     },
     {
       id: 't2',
       title: 'Pavagadh, Gujarat',
       caption: '⛰️ Pavagadh · UNESCO World Heritage Site',
-      desc: "Trekking up Pavagadh — a UNESCO World Heritage Site in Gujarat. The hilltop Mahakali temple and panoramic views remind you why sometimes you need to disconnect to reconnect.",
+      desc: "Trekking up Pavagadh a UNESCO World Heritage Site in Gujarat. The hilltop Mahakali temple and panoramic views remind you why sometimes you need to disconnect to reconnect.",
       photos: ['/gallery/pavagadh-1.jpg', '/gallery/pavagadh-2.jpg', '/gallery/pavagadh-3.jpg'],
     },
+
+    {
+  id: 'e3',
+  title: 'Vidyanagar Getaway',
+  caption: '🌍 Exploring Vidyanagar',
+  desc: 'Memories from traveling through Vidyanagar discovering local culture, scenic spots, and hidden gems along the journey.',
+  photos: ['/gallery/vidyanagar-1.jpg', '/gallery/vidyanagar-2.jpg'],
+}
   ],
 }
 

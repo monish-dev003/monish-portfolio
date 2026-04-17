@@ -74,7 +74,7 @@ export default function Home() {
             style={{ position: 'absolute', width: 380, height: 380, borderRadius: '50%', background: 'radial-gradient(circle, rgba(123,111,232,0.12), rgba(79,142,247,0.08) 50%, transparent 70%)' }} />
           <motion.div animate={{ y: [0, -8, 0] }} transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
             style={{ position: 'relative', borderRadius: '50%', overflow: 'hidden', width: 350, height: 350, boxShadow: '0 0 60px rgba(123,111,232,0.22), 0 0 110px rgba(79,142,247,0.06)', border: '4px solid rgba(123,111,232,0.6)', zIndex: 1 }}>
-            <img src="/photo.jpg" alt="Monish Shekh" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 15%', borderRadius: '50%' }} />
+            <img src="/photo.jpg" alt="Monish Shekh" style={{ width: '100%', height: '100%', objectFit: 'covr', objectPosition: 'center', borderRadius: '50%', transform:'scale(1.0)', }} />
           </motion.div>
           <motion.div initial={{ opacity: 0, scale: 0 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 1.2, type: 'spring' }}
             style={{ position: 'absolute', bottom: 20, right: 45, background: '#060608', border: '1px solid #7b6fe8', borderRadius: 20, padding: '5px 12px', fontSize: 11, fontWeight: 700, color: '#4ade80', letterSpacing: '0.5px', display: 'flex', alignItems: 'center', gap: 5, zIndex: 2 }}>
