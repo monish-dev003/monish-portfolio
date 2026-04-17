@@ -24,7 +24,17 @@ const GALLERY_DATA = {
       title: 'Competition Day — National Exam',
       caption: '💻 Web Technologies · IndiaSkills Nationals · Bangalore',
       desc: 'On the competition floor at IndiaSkills 2025 Bangalore — building a full working web application under timed exam conditions, judged by national-level industry experts.',
-      photos: ['/gallery/blr-exam-1.jpg', '/gallery/blr-exam-2.jpg', '/gallery/blr-exam-3.jpg', '/gallery/compday-4.jpg', '/gallery/compday-5.jpg', '/gallery/compday-6.jpg', '/gallery/compday-7.jpg', '/gallery/compday-8.jpg', '/gallery/compday-trophy.jpg'],
+      // Sirf 'compday-trophy.jpg' removed hai, baki saari 8 images yahan hain
+      photos: [
+        '/gallery/blr-exam-1.jpg', 
+        '/gallery/blr-exam-2.jpg', 
+        '/gallery/blr-exam-3.jpeg', 
+        '/gallery/compday-4.jpg', 
+        '/gallery/compday-5.jpg', 
+        '/gallery/compday-6.jpg', 
+        '/gallery/compday-7.jpg', 
+        '/gallery/compday-8.jpg'
+      ],
     },
   ],
   achievements: [
@@ -225,11 +235,11 @@ export default function Gallery() {
                   </div>
                 )}
 
-                {/* Main image */}
-                <div style={{ position: 'relative', height: item.featured ? 280 : 220, overflow: 'hidden' }}
+                {/* Main image - objectFit: contain added for straight images */}
+                <div style={{ position: 'relative', height: item.featured ? 280 : 220, overflow: 'hidden', background: '#000' }}
                   onClick={() => openLightbox(item.photos, 0, item.title)}>
                   <img src={item.photos[0]} alt={item.title}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', transition: 'transform 0.4s ease', transform: hoveredCard === item.id ? 'scale(1.06)' : 'scale(1)' }} />
+                    style={{ width: '100%', height: '100%', objectFit: 'contain', transition: 'transform 0.4s ease', transform: hoveredCard === item.id ? 'scale(1.06)' : 'scale(1)' }} />
 
                   <AnimatePresence>
                     {hoveredCard === item.id && (
@@ -269,8 +279,8 @@ export default function Gallery() {
                       {item.photos.map((p, i) => (
                         <motion.div key={i} whileHover={{ scale: 1.08 }}
                           onClick={(e) => { e.stopPropagation(); openLightbox(item.photos, i, item.title) }}
-                          style={{ width: 44, height: 36, borderRadius: 6, overflow: 'hidden', cursor: 'pointer', border: i === 0 ? '1px solid #7b6fe8' : '1px solid rgba(123,111,232,0.2)', flexShrink: 0 }}>
-                          <img src={p} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top' }} />
+                          style={{ width: 44, height: 36, borderRadius: 6, overflow: 'hidden', cursor: 'pointer', border: '1px solid rgba(123,111,232,0.2)', flexShrink: 0, background: '#000' }}>
+                          <img src={p} alt="" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                         </motion.div>
                       ))}
                     </div>
@@ -303,9 +313,7 @@ export default function Gallery() {
                 <motion.img
                   key={lightbox.idx}
                   src={lightbox.photos[lightbox.idx]}
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
+                  initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.95 }}
                   style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', borderRadius: 12, boxShadow: '0 0 60px rgba(123,111,232,0.2)' }}
                 />
               </AnimatePresence>
