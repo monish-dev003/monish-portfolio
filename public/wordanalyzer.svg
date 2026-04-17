@@ -1,0 +1,25 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700' viewBox='0 0 1200 700'>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0d0f1c"/><stop offset="100%" style="stop-color:#0a0c16"/></linearGradient>
+    <linearGradient id="acc" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#7b6fe8"/><stop offset="100%" style="stop-color:#4f8ef7"/></linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg)"/>
+  <rect x="60" y="70" width="1080" height="180" rx="16" fill="rgba(123,111,232,0.06)" stroke="rgba(123,111,232,0.14)" stroke-width="1"/>
+  <text x="90" y="112" fill="#444d5c" font-size="12" font-family="sans-serif">Enter your text...</text>
+  <text x="90" y="158" fill="#dde4f0" font-size="14" font-family="sans-serif">The quick brown fox jumps over the lazy dog. React is a JavaScript library for building user interfaces...</text>
+  <text x="90" y="190" fill="#dde4f0" font-size="14" font-family="sans-serif">It is maintained by Meta and a community of developers. Hooks revolutionized the way we write components...</text>
+  <rect x="60" y="296" width="250" height="115" rx="14" fill="rgba(123,111,232,0.08)" stroke="rgba(123,111,232,0.2)" stroke-width="1"/>
+  <text x="88" y="336" fill="#8892a4" font-size="13" font-family="sans-serif">Word Count</text>
+  <text x="88" y="382" fill="url(#acc)" font-size="40" font-weight="bold" font-family="sans-serif">248</text>
+  <rect x="330" y="296" width="250" height="115" rx="14" fill="rgba(79,142,247,0.08)" stroke="rgba(79,142,247,0.2)" stroke-width="1"/>
+  <text x="358" y="336" fill="#8892a4" font-size="13" font-family="sans-serif">Characters</text>
+  <text x="358" y="382" fill="url(#acc)" font-size="40" font-weight="bold" font-family="sans-serif">1,482</text>
+  <rect x="600" y="296" width="250" height="115" rx="14" fill="rgba(123,111,232,0.08)" stroke="rgba(123,111,232,0.2)" stroke-width="1"/>
+  <text x="628" y="336" fill="#8892a4" font-size="13" font-family="sans-serif">Sentences</text>
+  <text x="628" y="382" fill="url(#acc)" font-size="40" font-weight="bold" font-family="sans-serif">18</text>
+  <rect x="870" y="296" width="250" height="115" rx="14" fill="rgba(79,142,247,0.08)" stroke="rgba(79,142,247,0.2)" stroke-width="1"/>
+  <text x="898" y="336" fill="#8892a4" font-size="13" font-family="sans-serif">Read Time</text>
+  <text x="898" y="382" fill="url(#acc)" font-size="40" font-weight="bold" font-family="sans-serif">1 min</text>
+  <text x="60" y="488" fill="#dde4f0" font-size="22" font-weight="bold" font-family="sans-serif">📝 Word Analyzer</text>
+  <text x="60" y="522" fill="#8892a4" font-size="14" font-family="sans-serif">Real-time text statistics powered by React hooks</text>
+</svg>
