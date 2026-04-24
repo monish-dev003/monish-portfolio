@@ -6,7 +6,7 @@ const TABS = [
   { key: 'indiskills', label: '🏆 IndiaSkills 2025', highlight: true },
   { key: 'achievements', label: '🥇 Achievements' },
   { key: 'events', label: '📚 Events & Workshops' },
-  { key: 'travel', label: '✈️ Travel & Life' },
+  
 ]
 
 const GALLERY_DATA = {
@@ -16,26 +16,16 @@ const GALLERY_DATA = {
       featured: true,
       title: 'Bangalore Diaries — IndiaSkills 2025',
       caption: '🏛️ Yashobhoomi, Bangalore · National Competition',
-      desc: 'Represented Gujarat at IndiaSkills 2025 — India\'s most prestigious skill competition organised by NASSCOM, NSDC, and the Ministry of Skill Development. Competed in Web Technologies at the national level.',
-      photos: ['/gallery/blr-1.jpg', '/gallery/blr-2.jpg', '/gallery/blr-3.jpg', '/gallery/blr-4.jpg', '/gallery/blr-5.jpg', '/gallery/blr-6.jpg'],
-    },
-    {
-      id: 'i2',
-      title: 'Competition Day — National Exam',
-      caption: '💻 Web Technologies · IndiaSkills Nationals · Bangalore',
-      desc: 'On the competition floor at IndiaSkills 2025 Bangalore — building a full working web application under timed exam conditions, judged by national-level industry experts.',
-      // Sirf 'compday-trophy.jpg' removed hai, baki saari 8 images yahan hain
-      photos: [
-        '/gallery/blr-exam-1.jpg', 
+      desc: 'Represented Gujarat at IndiaSkills 2025 — India\'s most prestigious skill competition organised by NASSCOM, NSDC, and the Ministry of Skill Development. Competed in Cyber Security at the national level.',
+      photos: ['/gallery/blr-exam-1.jpg', 
         '/gallery/blr-exam-2.jpg', 
         '/gallery/blr-exam-3.jpeg', 
         '/gallery/compday-4.jpg', 
         '/gallery/compday-5.jpg', 
         '/gallery/compday-6.jpg', 
         '/gallery/compday-7.jpg', 
-        '/gallery/compday-8.jpg'
-      ],
-    },
+        '/gallery/compday-8.jpg']
+      },
   ],
   achievements: [
     {
@@ -91,30 +81,7 @@ const GALLERY_DATA = {
     },
     
   ],
-  travel: [
-    {
-      id: 't1',
-      title: 'Anasagar Lake, Ajmer',
-      caption: '🌊 Anasagar Lake · Ajmer, Rajasthan',
-      desc: "A serene visit to Anasagar Lake one of India's historic man-made lakes built in the 12th century, offering stunning reflections at sunset and a peaceful retreat from the digital world.",
-      photos: ['/gallery/anasagar-1.jpg', '/gallery/anasagar-2.jpg', '/gallery/anasagar-3.jpg'],
-    },
-    {
-      id: 't2',
-      title: 'Pavagadh, Gujarat',
-      caption: '⛰️ Pavagadh · UNESCO World Heritage Site',
-      desc: "Trekking up Pavagadh a UNESCO World Heritage Site in Gujarat. The hilltop Mahakali temple and panoramic views remind you why sometimes you need to disconnect to reconnect.",
-      photos: ['/gallery/pavagadh-1.jpg', '/gallery/pavagadh-2.jpg', '/gallery/pavagadh-3.jpg'],
-    },
-
-    {
-  id: 'e3',
-  title: 'Vidyanagar Getaway',
-  caption: '🌍 Exploring Vidyanagar',
-  desc: 'Memories from traveling through Vidyanagar discovering local culture, scenic spots, and hidden gems along the journey.',
-  photos: ['/gallery/vidyanagar-1.jpg', '/gallery/vidyanagar-2.jpg'],
-}
-  ],
+ 
 }
 
 export default function Gallery() {
@@ -207,7 +174,7 @@ export default function Gallery() {
                 IndiaSkills 2025 — National Competitor 🇮🇳
               </p>
               <p style={{ color: 'rgba(255,255,255,0.55)', fontSize: '0.82rem', margin: '4px 0 0' }}>
-                Represented Gujarat in Web Technologies · Competed at Yashobhoomi, Bangalore
+                Represented Gujarat in Cyber Security · Competed at Yashobhoomi, Bangalore
               </p>
             </div>
           </motion.div>
